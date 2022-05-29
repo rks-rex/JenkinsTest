@@ -67,7 +67,7 @@ def call() {
 //          print "Sonar Project Key    : ${env.SONAR_PROJECT_KEY}"
 //          print "Name of the fulltest POD : ${env.FULL_TEST_POD_NAME}"
 //          print "Name of the unittest POD : ${env.UNIT_TEST_POD_NAME}"
-//          print '========================================================'
+          print '========================================================'
 
 
                 }
