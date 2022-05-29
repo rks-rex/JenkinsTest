@@ -1,8 +1,8 @@
+import helperCollection.helperFunctions
 
-def call() {
-    @Library('pipeline_helper') import helperCollection.helperFunctions
 
-    def helper = new helperFunctions()
+def call(helperFunctions helpers) {
+
     pipeline {
         agent {
             label 'docker-build'
@@ -66,7 +66,7 @@ def call() {
 //          print "Name of the fulltest POD : ${env.FULL_TEST_POD_NAME}"
 //          print "Name of the unittest POD : ${env.UNIT_TEST_POD_NAME}"
 //          print '========================================================'
-                    helper.printEnvVars()
+                    helpers.printEnvVars()
                 }
             }
         }
