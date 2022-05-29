@@ -54,7 +54,7 @@ def call() {
 
 //        stages {
             stage('Print Jobinfo') {
-                steps {
+//                steps {
 //          print "Name of the model:   : ${env.MODEL_NAME}"
 //          print "Building branch      : ${env.MLFW_BRANCH_NAME}"
 //          print "MLFW environment     : ${env.MLFW_ENV}"
@@ -70,7 +70,7 @@ def call() {
           print '========================================================'
 
 
-                }
+//                }
             }
 //        }
     }
