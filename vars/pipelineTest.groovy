@@ -1,7 +1,7 @@
-import helperCollection.helperFunctions
-
 
 def call() {
+    @Library('pipeline_helper') import helperCollection.helperFunctions
+
     def helper = new helperFunctions()
     pipeline {
         agent {
