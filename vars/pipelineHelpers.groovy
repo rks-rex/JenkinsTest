@@ -1,5 +1,13 @@
-def printEnvVars(){
-    print("in the static function!")
+
+
+def call(){
+
+    return helpers()
 }
 
-return this
+
+class helpers{
+    def printEnvVars(){
+        print("in the static function!")
+    }
+}

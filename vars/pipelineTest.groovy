@@ -68,10 +68,14 @@ def call() {
 //          print "Name of the fulltest POD : ${env.FULL_TEST_POD_NAME}"
 //          print "Name of the unittest POD : ${env.UNIT_TEST_POD_NAME}"
           print '========================================================'
-
+            printEnvVars()
 
 //                }
             }
 //        }
     }
+}
+
+def printEnvVars(){
+    print("in the static function!")
 }
