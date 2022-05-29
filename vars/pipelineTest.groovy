@@ -7,10 +7,10 @@ def call() {
 //        agent {
 //            label 'docker-build'
 //        }
-        options {
-            timeout(time: 90, unit: 'MINUTES')
-            disableConcurrentBuilds()
-        }
+//        options {
+//            timeout(time: 90, unit: 'MINUTES')
+//            disableConcurrentBuilds()
+//        }
 
 
 //        environment {
