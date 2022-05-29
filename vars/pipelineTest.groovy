@@ -3,6 +3,9 @@
 def call() {
 
     pipeline {
+
+        library('pipeline_helper') _
+
         agent {
             label 'docker-build'
         }
@@ -67,7 +70,7 @@ def call() {
 //          print "Name of the fulltest POD : ${env.FULL_TEST_POD_NAME}"
 //          print "Name of the unittest POD : ${env.UNIT_TEST_POD_NAME}"
 //          print '========================================================'
-                    library('pipeline_helper').helperCollection.printEnvVars()
+                    printEnvVars()
 
                 }
             }
