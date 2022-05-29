@@ -1,6 +1,6 @@
+import helperClass
 
-
-def call() {
+def call(helperClass helper) {
 
     pipeline {
 
@@ -69,6 +69,7 @@ def call() {
 //          print "Name of the unittest POD : ${env.UNIT_TEST_POD_NAME}"
           print '========================================================'
             printEnvVars()
+                helper.printEnvVars()
 
 //                }
             }

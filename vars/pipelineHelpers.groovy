@@ -1,13 +1,7 @@
-
+import helperClass
 
 def call(){
 
-    return helpers()
+    return new helperClass()
 }
 
-
-class helpers{
-    def printEnvVars(){
-        print("in the static function!")
-    }
-}
