@@ -1,7 +1,10 @@
 package helperCollection
 
-def printEnvVars(){
-    print("in the function!")
+class helperFunctions{
+
+    def printEnvVars(){
+        print("in the function!")
+    }
 }
 
 return this
