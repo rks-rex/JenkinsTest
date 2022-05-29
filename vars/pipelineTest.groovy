@@ -2,6 +2,10 @@
 
 def call() {
 
+    libraries {
+        lib('pipeline_helper')
+    }
+
     pipeline {
 
         agent {
@@ -68,7 +72,7 @@ def call() {
 //          print "Name of the fulltest POD : ${env.FULL_TEST_POD_NAME}"
 //          print "Name of the unittest POD : ${env.UNIT_TEST_POD_NAME}"
 //          print '========================================================'
-                    library('pipeline_helper') _
+
                     printEnvVars()
 
                 }
