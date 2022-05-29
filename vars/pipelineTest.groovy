@@ -4,9 +4,9 @@ def call() {
 
     pipeline {
 
-        agent {
-            label 'docker-build'
-        }
+//        agent {
+//            label 'docker-build'
+//        }
         options {
             timeout(time: 90, unit: 'MINUTES')
             disableConcurrentBuilds()
