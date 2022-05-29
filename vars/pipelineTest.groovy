@@ -52,7 +52,7 @@ def call() {
 //            arg5 = "${arg5}"
 //        }
 
-        stages {
+//        stages {
             stage('Print Jobinfo') {
                 steps {
 //          print "Name of the model:   : ${env.MODEL_NAME}"
@@ -72,6 +72,6 @@ def call() {
 
                 }
             }
-        }
+//        }
     }
 }
